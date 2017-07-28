@@ -16,10 +16,9 @@ router.get("/", function(req, res) {
 
 router.post("/", function(req, res) {
   burger.cook([
-    "name", "devoured", "date"
+    "name", "devoured",
   ], [
-    req.body.name, false, new Date(year, month, day, hours, minutes, seconds)
-  ], function() {
+    req.body.name, false ], function() {
     res.redirect("/");
   });
 });
