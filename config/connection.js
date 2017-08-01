@@ -13,6 +13,7 @@ mysql.createConnection({
   user: "root",
   password: "notmysql",
   database: "eat_db"
+  dialect: "mysql"
 });
 }
 
